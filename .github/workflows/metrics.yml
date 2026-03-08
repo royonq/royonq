@@ -1,41 +1,31 @@
-name: Metrics
-on:
-  schedule: [{cron: "0 0 * * *"}]
-  workflow_dispatch:
-jobs:
-  github-metrics:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
+with:
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
+          base: "header, activity, community" # Добавляем базу для анализа активности
           filename: github-metrics.svg
           
           # 1. ТВОЙ 3D ГОРОД
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           
-          # 2. ТВОИ СКИЛЛЫ (АНАЛИЗ ЧУЖИХ РЕПО)
+          # 2. ТВОИ СКИЛЛЫ (C#, UNITY)
           plugin_languages: yes
           plugin_languages_indepth: yes
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
           plugin_languages_limit: 8
           
-          # ГЛАВНЫЕ СТРОКИ ДЛЯ РАБОТЫ В ЧУЖИХ ПРОЕКТАХ:
+          # ГЛАВНЫЕ НАСТРОЙКИ ДЛЯ ЧУЖИХ ПРОЕКТОВ
           repositories_affiliations: owner, collaborator, contributor
-          plugin_languages_analysis_timeout: 15
+          plugin_languages_analysis_timeout: 30 # Увеличил время, так как репо чужие
           plugin_languages_categories: programming
+          
+          # Учитывать коммиты во всех ветках, а не только в main
+          plugin_languages_recent_load: 1000
+          plugin_languages_recent_days: 365
           
           # НАСТРОЙКИ СТИЛЯ (ТЕМНЫЙ)
           template: classic
           config_timezone: Europe/Moscow
           config_display: large
-          base_indepth: yes
           config_order: isocalendar, languages
-          
-          # ТВОИ ЦВЕТА
           config_colors: "000000, #161b22, #30363d, #8b949e, #f3e600"
