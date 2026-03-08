@@ -9,9 +9,5 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/royonq/royonq/main/metrics_renders/github-metrics.svg" width="100%">
-</p>
-
-<p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=000000&height=60&section=footer" width="100%"/>
 </p>
