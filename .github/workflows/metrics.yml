@@ -18,21 +18,24 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           
-          # Языки (Скиллы)
+          # Языки
           plugin_languages: yes
           plugin_languages_sections: most-used
-          plugin_languages_details: percentage
           
-          # Настройки стиля
+          # НАСТРОЙКИ ТЕМЫ
           config_timezone: Europe/Moscow
-          config_display: large
-          config_padding: 0, 5
           template: classic
           base_indepth: yes
-          config_order: isocalendar, languages
-
-          # ТЕМНАЯ ПАЛИТРА:
-          # 1. #000000 — абсолютно черный фон
-          # 2-4. Оттенки серого для средних коммитов
-          # 5. #f3e600 — желтый (как в твоем заголовке) для пиков активности
-          config_colors: "#000000, #161b22, #30363d, #8b949e, #f3e600"
+          
+          # Включаем темную тему через встроенный параметр
+          config_padding: 0, 5
+          config_display: large
+          
+          # Вместо config_colors используем эти параметры для языков и общего стиля:
+          plugin_languages_colors: "github" # Использует стандартные цвета языков
+          
+          # Добавляем CSS, чтобы принудительно закрасить фон в черный
+          extras_css: |
+            h2, h3 { color: #f3e600; } 
+            section { background-color: #000000; }
+            svg { background-color: #000000; }
