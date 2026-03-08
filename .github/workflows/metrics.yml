@@ -1,25 +1,24 @@
 name: Metrics
 on:
-  schedule: [{cron: "0 0 * * *"}] # Обновлять каждый день в полночь
+  schedule: [{cron: "0 0 * * *"}]
   workflow_dispatch:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
-       with:
+        with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-          # Цвета: фон (черный), и градиент столбиков от темного к светлому
-          config_colors: "0d1117, #21262d, #30363d, #484f58, #8b949e"
           config_timezone: Europe/Moscow
-          # Настройки стиля:
           config_display: large
           config_padding: 0, 5
           design_title_color: "#30363d"
           template: classic
           base_indepth: yes
-          # Цвета под твой темный стиль:
           config_order: isocalendar
+          config_colors: "0d1117, #21262d, #30363d, #484f58, #8b949e"isocalendar
