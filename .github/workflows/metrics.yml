@@ -21,4 +21,4 @@ jobs:
           template: classic
           base_indepth: yes
           config_order: isocalendar
-          config_colors: "0d1117, #21262d, #30363d, #484f58, #8b949e"isocalendar
+          config_colors: "0d1117, #21262d, #30363d, #484f58, #8b949e"
