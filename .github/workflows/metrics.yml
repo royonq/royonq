@@ -12,13 +12,24 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
+          # Убираем папку, сохраняем прямо в корень для легкого доступа
+          filename: github-metrics.svg
+          
+          # 3D Календарь (Тот самый город)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          
+          # Твои скиллы (Языки программирования)
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
+          
+          # Настройки стиля под твой скриншот
           config_timezone: Europe/Moscow
           config_display: large
           config_padding: 0, 5
-          design_title_color: "#30363d"
           template: classic
           base_indepth: yes
-          config_order: isocalendar
+          config_order: isocalendar, languages
+          # Темная палитра (черный фон и серые столбики)
           config_colors: "0d1117, #21262d, #30363d, #484f58, #8b949e"
