@@ -18,18 +18,17 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           
-          # 2. ТВОИ СКИЛЛЫ (C#, UNITY)
+          # 2. ТВОИ СКИЛЛЫ (АНАЛИЗ ЧУЖИХ РЕПО)
           plugin_languages: yes
-          plugin_languages_ignored: html, css, tex, less, dockerfile, makefile
-          plugin_languages_details: percentage, lines
+          plugin_languages_indepth: yes
           plugin_languages_sections: most-used
-          plugin_languages_indepth: yes                # Глубокий анализ кода
-          plugin_languages_categories: programming      # Фокус на коде, а не на ассетах
+          plugin_languages_details: percentage
           plugin_languages_limit: 8
-          plugin_languages_analysis_timeout: 15
           
-          # НАСТРОЙКИ РЕПОЗИТОРИЕВ
-          repositories_affiliations: owner, collaborator # Считать и свои, и чужие репо
+          # ГЛАВНЫЕ СТРОКИ ДЛЯ РАБОТЫ В ЧУЖИХ ПРОЕКТАХ:
+          repositories_affiliations: owner, collaborator, contributor
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_categories: programming
           
           # НАСТРОЙКИ СТИЛЯ (ТЕМНЫЙ)
           template: classic
@@ -38,5 +37,5 @@ jobs:
           base_indepth: yes
           config_order: isocalendar, languages
           
-          # ТВОИ ЦВЕТА (Черный фон и желтый акцент)
+          # ТВОИ ЦВЕТА
           config_colors: "000000, #161b22, #30363d, #8b949e, #f3e600"
