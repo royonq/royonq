@@ -6,6 +6,3 @@
   <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/yellow.png" width="100%">
 </p>
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJpbmZ6Znd4ZzR4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Lp71Uqhzn28qvMdG5v/giphy.gif" width="50px">
-</p>
