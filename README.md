@@ -5,6 +5,3 @@
 <p align="center">
   <img src="https://skillicons.dev/icons?i=unity&theme=dark" width="80px" />
 </p>
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ТВОЙ_НИК&theme=dracula" />
-</p>
