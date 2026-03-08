@@ -5,3 +5,7 @@
 <p align="center">
   <img src="https://skillicons.dev/icons?i=unity&theme=dark" width="80px" />
 </p>
+
+<p align="center">
+  <img src="https://github.com/ТВОЙ_НИК/ТВОЙ_НИК/blob/master/github-metrics.svg" width="100%">
+</p>
