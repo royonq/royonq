@@ -14,23 +14,24 @@ jobs:
           base: "header, activity, community"
           filename: github-metrics.svg
           
-          # 1. ТВОЙ 3D ГОРОД
+          # Настройка темы
+          config_presets: github-dark
+          config_timezone: Europe/Moscow
+          
+          # 3D Календарь
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           
-          # 2. ПРИНУДИТЕЛЬНЫЕ СКИЛЛЫ (C# и Unity)
-          # Это сработает на 100%, даже если в репо пусто
+          # Скиллы (Языки)
           plugin_languages: yes
+          plugin_languages_indepth: yes
           plugin_languages_sections: most-used
           plugin_languages_details: percentage
-          plugin_languages_indepth: yes
+          plugin_languages_limit: 8
+          
+          # Анализ активности в чужих проектах (твои контрибьюты)
           repositories_affiliations: owner, collaborator, contributor
+          plugin_languages_categories: programming
           
-          # НАСТРОЙКИ СТИЛЯ
-          template: classic
-          config_timezone: Europe/Moscow
-          config_display: large
+          # Порядок блоков
           config_order: isocalendar, languages
-          
-          # Темная тема через пресет (чтобы не было ворнингов)
-          config_presets: github-dark
