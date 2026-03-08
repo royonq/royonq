@@ -18,24 +18,18 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           
-          # 2. ТВОИ СКИЛЛЫ (C#, UNITY, SHADERS)
+          # 2. ТВОИ СКИЛЛЫ (C#, UNITY)
           plugin_languages: yes
-          plugin_languages_ignored: html, css, makefile # Игнорируем лишнее
-          plugin_languages_details: percentage, lines   # Показываем проценты и строки кода
           plugin_languages_sections: most-used
-          plugin_languages_limit: 8
-          plugin_languages_indepth: yes                # Глубокий анализ всех репозиториев
+          plugin_languages_details: percentage
+          plugin_languages_indepth: yes
           
-          # НАСТРОЙКИ СТИЛЯ (ТЁМНЫЙ)
+          # НАСТРОЙКИ СТИЛЯ (ТЕМНЫЙ)
           template: classic
           config_timezone: Europe/Moscow
           config_display: large
           base_indepth: yes
-          
-          # ПОРЯДОК ОТОБРАЖЕНИЯ: Сначала город, под ним — языки
           config_order: isocalendar, languages
           
           # ТВОИ ЦВЕТА (Черный фон и желтый акцент)
           config_colors: "000000, #161b22, #30363d, #8b949e, #f3e600"
-            section { background-color: #000000; }
-            svg { background-color: #000000; }
