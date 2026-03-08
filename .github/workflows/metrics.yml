@@ -7,11 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
-        with:
+       with:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          # Цвета: фон (черный), и градиент столбиков от темного к светлому
+          config_colors: "0d1117, #21262d, #30363d, #484f58, #8b949e"
           config_timezone: Europe/Moscow
           # Настройки стиля:
           config_display: large
