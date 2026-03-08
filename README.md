@@ -1,16 +1,13 @@
-## Hi there 👋
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=shades&color=000000&height=250&section=header&text=SAMURAI%20DEV&fontSize=70&animation=fadeIn&fontAlignY=38&desc=Code%20is%20my%20Katana&descAlignY=60&descAlign=50" />
+</p>
 
-<!--
-**royonq/royonq** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h1 align="center"> 武士道 (Bushidō) — Путь Разработчика </h1>
 
-Here are some ideas to get you started:
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="100%">
+</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<p align="center">
+  <i>"У самурая нет цели, только коммиты. Код должен быть чист, как клинок."</i>
+</p>
