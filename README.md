@@ -7,5 +7,5 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/roynq/roynq/main/github-metrics.svg" width="100%">
+  <img src="https://raw.githubusercontent.com/royonq/royonq/main/metrics_renders/github-metrics.svg" width="100%">
 </p>
