@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=slice&color=000000&height=180&text=BEYOND%20THE%20IMPOSSIBLE&fontSize=60&fontColor=f3e600&fontFamily=Orbitron&animation=twinkling" />
+  <img src="https://capsule-render.vercel.app/api?type=slice&color=000000&height=180&text=DREAM%20AND%20CREATE&fontSize=60&fontColor=f3e600&fontFamily=Orbitron&animation=twinkling" />
 </p>
 
 <p align="center">
